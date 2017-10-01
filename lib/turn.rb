@@ -7,7 +7,10 @@ puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
 def position_taken?(board, index)
-
+  if board[index] != "X" && "O"
+    return false
+  else
+    return true
 end
 
 def valid_move?(board, index)
