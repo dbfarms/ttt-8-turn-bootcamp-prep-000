@@ -18,6 +18,7 @@ def valid_move?(board, index, token = "X")
   if index.between?(0, 8)
     if !(position_taken?)
       board[index] == token
+      return true
     else
       puts "Position is taken!"
       return false
