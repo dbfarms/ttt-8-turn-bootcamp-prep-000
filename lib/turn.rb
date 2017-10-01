@@ -11,10 +11,11 @@ def position_taken?(board, index)
     return false
   else
     return true
+  end
 end
 
 def valid_move?(board, index)
-
+  if index.between?(0, 8)
 end
 
 def turn(board)
