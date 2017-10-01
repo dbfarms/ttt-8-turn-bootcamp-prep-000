@@ -16,7 +16,7 @@ end
 
 def valid_move?(board, index, token = "X")
   puts index
-  if index.between?(0, 8) == true
+  if (index.between?(0, 8)) == true
     if !(position_taken?(board, index))
       board[index] == token
       return true
