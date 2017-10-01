@@ -19,10 +19,12 @@ def valid_move?(board, index, token = "X")
     if !(position_taken?)
       board[index] == token
     else
-      return "Position is taken!"
+      puts "Position is taken!"
+      return false
     end
   else
-    return "Invalid position"
+    puts "Invalid position"
+    return false
   end
 
 end
