@@ -14,8 +14,17 @@ def position_taken?(board, index)
   end
 end
 
-def valid_move?(board, index)
+def valid_move?(board, index, token = "X")
   if index.between?(0, 8)
+    if !(position_taken?)
+      board[index] == token
+    else
+      return "Position is taken!"
+    end
+  else
+    return "Invalid position"
+  end
+
 end
 
 def turn(board)
