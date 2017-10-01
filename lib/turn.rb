@@ -6,7 +6,11 @@ puts "-----------"
 puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+def position_taken?
+end
+
 def valid_move?
+
 end
 
 def turn(board)
@@ -15,4 +19,3 @@ def turn(board)
   index = input -=
   valid_move?(board, index)
 end
-
